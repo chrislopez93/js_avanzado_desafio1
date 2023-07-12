@@ -1,11 +1,161 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
 </head>
+
 <body>
-    
+    <div class="flex_product_container">
+        <div class="flex_product_item">
+            <input class="multiplicador" type="number" placeholder="Cantidad" value="">
+            <input class="color" placeholder="Elige un color">
+            <p>Precio: $49.990 c/u</p>
+            <button class="calculo" onclick="
+
+            ">Calcular</button>
+        </div>
+        <div class=" flex_product_total">
+            <div class="flex_color_container">
+                <p>Color:
+                <div class="color_picker"></div>
+                </p>
+            </div>
+            <p>Cantidad:
+                <span class="cantidad"></span>
+            </p>
+            <p>Total:
+                <span class="resultado" type="number"></span>
+            </p>
+        </div>
+    </div>
+
+    <script src="./assets/js/script.js">
+
+
+
+    </script>
+
 </body>
+
 </html>
+
+<!-- Desafío dentro de HTML sin botón JS
+    <div class="flex_product_container">
+        <div class="flex_product_item">
+            <input class="multiplicador" type="number" placeholder="Cantidad" value="">
+            <input class="color" placeholder="Digita un color">
+            <p>Precio: $49.990 c/u</p>
+            <button class="calculo" onclick="
+                let precio = 49990;
+                let cantidad = document.querySelector('.multiplicador').value;
+                let final = Number(precio) * Number(cantidad);
+                    document.querySelector('.resultado').innerHTML = '$' + final;
+                    document.querySelector('.cantidad').innerHTML = cantidad;
+                let elegido = document.querySelector('.color').value;
+                let coloreado = document.querySelector('.color_picker');
+                    coloreado.style.backgroundColor = elegido;
+                    elegido.innerHTML = coloreado;
+            ">Calcular</button>
+        </div>
+        <div class=" flex_product_total">
+            <div class="flex_color_container">
+                <p>Color:
+                <div class="color_picker"></div>
+                </p>
+            </div>
+            <p>Cantidad:
+                <span class="cantidad"></span>
+            </p>
+            <p>Total:
+                <span class="resultado" type="number"></span>
+            </p>
+        </div>
+    </div>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- // function multiplicar (){
+    //     var precioProducto = 49.990;
+    //     var cantidadProductos = document.querySelector('.multiplicador');
+    //     r = precioProducto * cantidadProductos;
+    //     r.innerHTML = resultado;
+    // } -->
+
+<!-- alternativas correcta e incorrectas 
+        
+        <p>¿Qué lenguaje estamos prácticando?</p>
+    <select id="selector" onchange="
+        elemento_seleccionado = document.querySelector('#selector');
+        elemento_resultado = document.querySelector('#resultado');
+        elemento_resultado.innerHTML = 'La respuesta es ' + elemento_seleccionado.value;
+">
+        <option value="incorrecta">css</option>
+        <option value="incorrecta">html</option>
+        <option value="correcta">js</option>
+        <option value="incorrecta">less</option>
+    </select>
+    <span id="resultado"> </span> -->
+
+<!--Frase tachada
+    <ul>
+        <li id="click1" onclick="
+            click = document.querySelector('#click1')
+            click.style.textDecoration = 'line-through';
+            ">Elemento 1</li>
+        <li id="click2" onclick="
+            click = document.querySelector('#click2')
+            click.style.textDecoration = 'line-through';
+            ">Elemento 2</li>
+        <li id="click3" onclick="
+            click = document.querySelector('#click3')
+            click.style.textDecoration = 'line-through';
+            ">Elemento 3</li>
+        <li id="click4" onclick="
+            click = document.querySelector('#click4')
+            click.style.textDecoration = 'line-through';
+            ">Elemento 4</li>
+    </ul>
+-->
+
+
+<!--Redondeo de imagen con dos botones
+<img src="https://placedog.net/500/500">
+<button onclick="
+var noredondo = document.querySelector('img')
+noredondo.style.borderRadius='0%'
+"> 0 radius </button>
+<button onclick="
+var redondo = document.querySelector('img')
+redondo.style.borderRadius='50%'
+"> 50% radius</button>-->
