@@ -15,9 +15,7 @@
             <input class="multiplicador" type="number" placeholder="Cantidad" value="">
             <input class="color" placeholder="Elige un color">
             <p>Precio: $49.990 c/u</p>
-            <button class="calculo" onclick="
-
-            ">Calcular</button>
+            <button class="calculo" onclick="total()">Calcular</button>
         </div>
         <div class=" flex_product_total">
             <div class="flex_color_container">
@@ -34,7 +32,7 @@
         </div>
     </div>
 
-    <script src="./assets/js/script.js">
+    <script src="./assets/js/main.js">
 
 
 
@@ -43,37 +41,3 @@
 </body>
 
 </html>
-
-<!-- Desafío dentro de HTML sin botón JS
-    <div class="flex_product_container">
-        <div class="flex_product_item">
-            <input class="multiplicador" type="number" placeholder="Cantidad" value="">
-            <input class="color" placeholder="Digita un color">
-            <p>Precio: $49.990 c/u</p>
-            <button class="calculo" onclick="
-                let precio = 49990;
-                let cantidad = document.querySelector('.multiplicador').value;
-                let final = Number(precio) * Number(cantidad);
-                    document.querySelector('.resultado').innerHTML = '$' + final;
-                    document.querySelector('.cantidad').innerHTML = cantidad;
-                let elegido = document.querySelector('.color').value;
-                let coloreado = document.querySelector('.color_picker');
-                    coloreado.style.backgroundColor = elegido;
-                    elegido.innerHTML = coloreado;
-            ">Calcular</button>
-        </div>
-        <div class=" flex_product_total">
-            <div class="flex_color_container">
-                <p>Color:
-                <div class="color_picker"></div>
-                </p>
-            </div>
-            <p>Cantidad:
-                <span class="cantidad"></span>
-            </p>
-            <p>Total:
-                <span class="resultado" type="number"></span>
-            </p>
-        </div>
-    </div>
--->
