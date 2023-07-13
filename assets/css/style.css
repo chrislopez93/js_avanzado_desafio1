@@ -4,6 +4,7 @@
 }
 
 body{
+    background-color:darkgoldenrod;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -13,9 +14,10 @@ body{
 }
 
 .flex_product_container{
+    border-radius: 5px;
     display: flex;
     flex-direction: row;
-    height: 300px;
+    height: 320px;
     background-color: green;
     border: 1px solid black;
 }
@@ -38,16 +40,31 @@ body{
     width: 250px;
 }
 
+.foto{
+    height: 150px;
+    margin-top: 20px;
+    box-shadow: 10px 10px 14px 2px;
+}
+
 .color_picker{
     border-radius: 50%;
     height: 20px;
     width: 20px;
     margin-left: 5px;
+    transition: background-color 0.5s linear;
 }
 
 .flex_color_container{
     display: flex;
     flex-direction: row;
+}
+
+.multiplicador{
+    margin-top: 15px;
+}
+
+.color_p, .cantidad_p, .total_p{
+    margin-bottom: 10px;
 }
 
 input{
