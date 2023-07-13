@@ -4,6 +4,7 @@
 }
 
 body{
+    font-family: 'Montserrat', sans-serif;
     background-color:darkgoldenrod;
     display: flex;
     align-items: center;
@@ -18,7 +19,7 @@ body{
     display: flex;
     flex-direction: row;
     height: 320px;
-    background-color: green;
+    background-color:beige;
     border: 1px solid black;
 }
 
@@ -41,6 +42,7 @@ body{
 }
 
 .foto{
+    border-radius: 5px;
     height: 150px;
     margin-top: 20px;
     box-shadow: 10px 10px 14px 2px;
@@ -48,6 +50,7 @@ body{
 
 .color_picker{
     border-radius: 50%;
+    border: 1px solid black;
     height: 20px;
     width: 20px;
     margin-left: 5px;
@@ -61,6 +64,12 @@ body{
 
 .multiplicador{
     margin-top: 15px;
+}
+
+.color, .multiplicador{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    width: 150px;
 }
 
 .color_p, .cantidad_p, .total_p{
